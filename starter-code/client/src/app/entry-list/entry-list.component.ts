@@ -14,7 +14,6 @@ export class EntryListComponent implements OnInit {
   constructor( private entryList: EntryListService) { }
 
   ngOnInit() {
-    // console.log(this.entryList);
     this.entryList.getList()
       .subscribe((entryLists) => {
         this.entryLists = entryLists;

@@ -1,5 +1,6 @@
 <h1> Listing Entries </h1>
-<div *ngFor="let entryList of entryLists">
-  <p> {{entryList.title}} </p>
-  <p> {{entryList.date}} </p>
+<div class="list" *ngFor="let journal of entryLists">
+  <p class="single"> <strong> Title: </strong> {{journal.title}} </p>
+  <p class="single"> <strong> Date: </strong> {{journal.date}} </p>
+  <a class="single" [routerLink]="['journal', journal._id]"> View Details </a>
 </div>
