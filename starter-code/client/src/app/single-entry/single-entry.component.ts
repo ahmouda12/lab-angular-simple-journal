@@ -14,7 +14,6 @@ export class SingleEntryComponent implements OnInit {
 
   constructor( 
     private route: ActivatedRoute,
-    // private router: Router, 
     private entryList: EntryListService) { }
 
   ngOnInit() {
